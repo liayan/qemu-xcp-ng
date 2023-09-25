@@ -1,0 +1,9 @@
+.//usr/lib64/xen/bin/qemu-pr-helper
+.//usr/lib64/xen/bin/qemu-img
+.//usr/lib64/xen/bin/ivshmem-client
+.//usr/lib64/xen/bin/qemu-system-i386
+.//usr/lib64/xen/bin/ivshmem-server
+.//usr/lib64/xen/bin/qemu-edid
+.//usr/lib64/xen/bin/qemu-nbd
+.//usr/lib64/xen/bin/qemu-io
+.//usr/libexec/qemu-bridge-helper

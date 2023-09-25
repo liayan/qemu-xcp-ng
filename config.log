@@ -1,0 +1,766 @@
+# QEMU configure log Sat Sep 23 00:08:38 UTC 2023
+# Configured with: '/home/builder/rpmbuild/BUILD/qemu-4.2.1/configure' '--cc=gcc' '--cxx=/dev/null' '--enable-xen' '--target-list=i386-softmmu' '--prefix=/usr' '--bindir=/usr/lib64/xen/bin' '--datadir=/usr/share' '--localstatedir=/var' '--libexecdir=/usr/libexec' '--sysconfdir=/etc' '--enable-werror' '--enable-libusb' '--enable-trace-backend=log' '--disable-kvm' '--disable-docs' '--disable-guest-agent' '--disable-sdl' '--disable-curses' '--disable-curl' '--disable-gtk' '--disable-bzip2' '--disable-strip' '--disable-gnutls' '--disable-nettle' '--disable-gcrypt' '--disable-vhost-net' '--disable-vhost-scsi' '--disable-vhost-vsock' '--disable-vhost-user' '--disable-lzo' '--disable-tpm' '--disable-virtfs' '--disable-tcg' '--disable-tcg-interpreter' '--disable-replication' '--disable-qom-cast-debug' '--disable-slirp' '--audio-drv-list=' '--disable-coroutine-pool' '--disable-live-block-migration' '--disable-bochs' '--disable-cloop' '--disable-dmg' '--disable-vvfat' '--disable-qed' '--disable-parallels' '--disable-sheepdog' '--without-default-devices' '--enable-seccomp' '--enable-jemalloc'
+#
+
+funcs: do_compiler do_cc compile_object check_define main
+lines: 93 123 620 637 0
+gcc -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+
+funcs: do_compiler do_cc compile_object check_define main
+lines: 93 123 620 689 0
+gcc -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+config-temp/qemu-conf.c:2:2: error: #error __i386__ not defined
+ #error __i386__ not defined
+  ^
+
+funcs: do_compiler do_cc compile_object check_define main
+lines: 93 123 620 691 0
+gcc -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+
+funcs: do_compiler do_cc compile_object check_define main
+lines: 93 123 620 692 0
+gcc -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+config-temp/qemu-conf.c:2:2: error: #error __ILP32__ not defined
+ #error __ILP32__ not defined
+  ^
+
+funcs: do_compiler do_cc compile_object main
+lines: 93 123 1867 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+gcc -Werror -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 1872 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+gcc -Werror -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 1926 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+gcc -Werror -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Werror -Wstring-plus-int -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+gcc: error: unrecognized command line option '-Wstring-plus-int'
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Werror -Wtypedef-redefinition -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+gcc: error: unrecognized command line option '-Wtypedef-redefinition'
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Werror -Winitializer-overrides -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+gcc: error: unrecognized command line option '-Winitializer-overrides'
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Werror -Wexpansion-to-defined -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+gcc: error: unrecognized command line option '-Wexpansion-to-defined'
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Werror -Wendif-labels -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Werror -Wshift-negative-value -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+gcc: error: unrecognized command line option '-Wshift-negative-value'
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Werror -Wmissing-include-dirs -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Werror -Wempty-body -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Werror -Wnested-externs -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Werror -Wformat-security -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Werror -Wformat-y2k -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Werror -Winit-self -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Werror -Wignored-qualifiers -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Werror -Wold-style-declaration -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Werror -Wold-style-definition -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog cc_has_warning_flag main
+lines: 93 129 1948 1952 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Werror -Wtype-limits -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc main
+lines: 93 1973 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -Werror -fstack-protector-strong -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 1974 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -Werror -fstack-protector-strong -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_object main
+lines: 93 123 1994 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Werror -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+config-temp/qemu-conf.c:3:1: error: missing braces around initializer [-Werror=missing-braces]
+ } x = {0};
+ ^
+config-temp/qemu-conf.c:3:1: error: (near initialization for 'x.a') [-Werror=missing-braces]
+cc1: all warnings being treated as errors
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 2023 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -Werror -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 2053 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -Werror -fno-pie -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g -no-pie
+gcc: error: unrecognized command line option '-no-pie'
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 2058 0
+gcc -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -fPIE -DPIE -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g -pie
+gcc -Werror -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -fPIE -DPIE -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -m64 -g -pie
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 2062 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -pie -m64 -g -Wl,-z,relro -Wl,-z,now
+gcc -Werror -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -pie -m64 -g -Wl,-z,relro -Wl,-z,now
+
+funcs: do_compiler do_cc compile_object main
+lines: 93 123 2189 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+gcc -Werror -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+
+funcs: do_compiler do_cc compile_object main
+lines: 93 123 2225 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -Werror -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 2237 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_object main
+lines: 93 123 2338 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+gcc -Werror -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 2370 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lsnappy
+config-temp/qemu-conf.c:1:22: fatal error: snappy-c.h: No such file or directory
+ #include <snappy-c.h>
+                      ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 2407 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -llzfse
+config-temp/qemu-conf.c:1:19: fatal error: lzfse.h: No such file or directory
+ #include <lzfse.h>
+                   ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3013 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lpam
+config-temp/qemu-conf.c:1:31: fatal error: security/pam_appl.h: No such file or directory
+ #include <security/pam_appl.h>
+                               ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_object check_include main
+lines: 93 123 628 3028 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+gcc -Werror -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3187 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lrdmacm -libverbs -libumad
+config-temp/qemu-conf.c:1:27: fatal error: rdma/rdma_cma.h: No such file or directory
+ #include <rdma/rdma_cma.h>
+                           ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3285 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lsasl2
+config-temp/qemu-conf.c:1:23: fatal error: sasl/sasl.h: No such file or directory
+ #include <sasl/sasl.h>
+                       ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3307 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -ljpeg
+gcc -Werror -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -ljpeg
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3339 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lpng15
+gcc -Werror -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lpng15
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3379 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+config-temp/qemu-conf.c:2:21: fatal error: xfs/xfs.h: No such file or directory
+ #include <xfs/xfs.h>
+                     ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3403 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lvdeplug
+config-temp/qemu-conf.c:1:24: fatal error: libvdeplug.h: No such file or directory
+ #include <libvdeplug.h>
+                        ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3453 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lcap-ng
+config-temp/qemu-conf.c:1:20: fatal error: cap-ng.h: No such file or directory
+ #include <cap-ng.h>
+                    ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3548 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lbrlapi
+config-temp/qemu-conf.c:1:20: fatal error: brlapi.h: No such file or directory
+ #include <brlapi.h>
+                    ^
+compilation terminated.
+looking at iconv in '-I/usr/local/include' '-L/usr/local/lib '
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3579 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -I/usr/local/include -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -L/usr/local/lib
+gcc -Werror -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -I/usr/local/include -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -L/usr/local/lib
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3690 0
+gcc -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+config-temp/qemu-conf.c:1:33: fatal error: bluetooth/bluetooth.h: No such file or directory
+ #include <bluetooth/bluetooth.h>
+                                 ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3757 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -g -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -pthread -lgthread-2.0 -lglib-2.0
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -g -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -pthread -lgthread-2.0 -lglib-2.0
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3769 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -Werror -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -pthread -lgthread-2.0 -lglib-2.0
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3852 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -ludev -lmultipath -lmpathpersist
+config-temp/qemu-conf.c:1:21: fatal error: libudev.h: No such file or directory
+ #include <libudev.h>
+                     ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3868 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -ludev -lmultipath -lmpathpersist
+config-temp/qemu-conf.c:1:21: fatal error: libudev.h: No such file or directory
+ #include <libudev.h>
+                     ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3888 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lcap
+config-temp/qemu-conf.c:2:28: fatal error: sys/capability.h: No such file or directory
+ #include <sys/capability.h>
+                            ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3909 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3951 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3968 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+config-temp/qemu-conf.c: In function 'f':
+config-temp/qemu-conf.c:3:1: warning: passing argument 1 of 'pthread_setname_np' makes integer from pointer without a cast [enabled by default]
+ static void *f(void *p) { pthread_setname_np("QEMU"); }
+ ^
+In file included from config-temp/qemu-conf.c:1:0:
+/usr/include/pthread.h:454:12: note: expected 'pthread_t' but argument is of type 'const char *'
+ extern int pthread_setname_np (pthread_t __target_thread, const char *__name)
+            ^
+config-temp/qemu-conf.c:3:1: error: too few arguments to function 'pthread_setname_np'
+ static void *f(void *p) { pthread_setname_np("QEMU"); }
+ ^
+In file included from config-temp/qemu-conf.c:1:0:
+/usr/include/pthread.h:454:12: note: declared here
+ extern int pthread_setname_np (pthread_t __target_thread, const char *__name)
+            ^
+config-temp/qemu-conf.c:3:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ static void *f(void *p) { pthread_setname_np("QEMU"); }
+ ^
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 3985 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lrbd -lrados
+config-temp/qemu-conf.c:2:24: fatal error: rbd/librbd.h: No such file or directory
+ #include <rbd/librbd.h>
+                        ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4037 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -laio
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -laio
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4076 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4100 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4113 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4148 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lfdt
+config-temp/qemu-conf.c:1:20: fatal error: libfdt.h: No such file or directory
+ #include <libfdt.h>
+                    ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4322 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4337 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4353 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4369 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4388 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4401 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lnuma
+config-temp/qemu-conf.c:1:18: fatal error: numa.h: No such file or directory
+ #include <numa.h>
+                  ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4466 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -ljemalloc
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -ljemalloc
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4483 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4494 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+config-temp/qemu-conf.c: In function 'main':
+config-temp/qemu-conf.c:2:25: error: 'optreset' undeclared (first use in this function)
+ int main(void) { return optreset; }
+                         ^
+config-temp/qemu-conf.c:2:25: note: each undeclared identifier is reported only once for each function it appears in
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4508 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4522 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+config-temp/qemu-conf.c: In function 'main':
+config-temp/qemu-conf.c:5:5: warning: implicit declaration of function 'memfd_create' [-Wimplicit-function-declaration]
+     return memfd_create("foo", MFD_ALLOW_SEALING);
+     ^
+config-temp/qemu-conf.c:5:5: warning: nested extern declaration of 'memfd_create' [-Wnested-externs]
+config-temp/qemu-conf.c:5:32: error: 'MFD_ALLOW_SEALING' undeclared (first use in this function)
+     return memfd_create("foo", MFD_ALLOW_SEALING);
+                                ^
+config-temp/qemu-conf.c:5:32: note: each undeclared identifier is reported only once for each function it appears in
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4545 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4561 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4577 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4593 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4608 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4623 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4640 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4655 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4671 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4686 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4701 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4724 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4738 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4752 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4769 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4784 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4799 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4832 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4844 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+config-temp/qemu-conf.c:1:24: fatal error: sys/endian.h: No such file or directory
+ #include <sys/endian.h>
+                        ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4869 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+/tmp/ccwMrO6b.o: In function `main':
+/home/builder/rpmbuild/BUILD/qemu-4.2.1/config-temp/qemu-conf.c:2: undefined reference to `sin'
+collect2: error: ld returned 1 exit status
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4871 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lm
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lm
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4893 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+/tmp/cc0qbwOg.o: In function `main':
+/home/builder/rpmbuild/BUILD/qemu-4.2.1/config-temp/qemu-conf.c:4: undefined reference to `timer_create'
+collect2: error: ld returned 1 exit status
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4896 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lrt
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lrt
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4907 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+/tmp/cc6PEHwi.o: In function `main':
+/home/builder/rpmbuild/BUILD/qemu-4.2.1/config-temp/qemu-conf.c:2: undefined reference to `openpty'
+collect2: error: ld returned 1 exit status
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 4908 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lutil
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lutil
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5148 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5162 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5175 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5190 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5202 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5214 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5229 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5296 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5359 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5373 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5396 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -Werror -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5412 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+config-temp/qemu-conf.c:1:31: fatal error: valgrind/valgrind.h: No such file or directory
+ #include <valgrind/valgrind.h>
+                               ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5427 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5451 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_object main
+lines: 93 123 5473 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5494 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5513 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5558 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5588 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -Wl,--dynamic-list=config-temp/qemu-conf.txt
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -Wl,--dynamic-list=config-temp/qemu-conf.txt
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5602 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -Wl,-exported_symbols_list,config-temp/qemu-conf.txt
+/usr/bin/ld:config-temp/qemu-conf.txt: file format not recognized; treating as linker script
+/usr/bin/ld:config-temp/qemu-conf.txt:2: syntax error
+collect2: error: ld returned 1 exit status
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5665 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5680 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5694 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_object main
+lines: 93 123 5722 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -Werror -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5750 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+config-temp/qemu-conf.c: In function 'main':
+config-temp/qemu-conf.c:3:3: warning: implicit declaration of function 'copy_file_range' [-Wimplicit-function-declaration]
+   copy_file_range(0, NULL, 0, NULL, 0, 0);
+   ^
+config-temp/qemu-conf.c:3:3: warning: nested extern declaration of 'copy_file_range' [-Wnested-externs]
+/tmp/ccRBgAcc.o: In function `main':
+/home/builder/rpmbuild/BUILD/qemu-4.2.1/config-temp/qemu-conf.c:3: undefined reference to `copy_file_range'
+collect2: error: ld returned 1 exit status
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5765 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5809 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5836 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5854 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_object main
+lines: 93 123 5893 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
+
+funcs: do_compiler do_cc main
+lines: 93 5897 0
+gcc -nostdlib -Wl,-r -Wl,--no-relax -o config-temp/qemu-conf.mo config-temp/qemu-conf.o
+gcc -Werror -nostdlib -Wl,-r -Wl,--no-relax -o config-temp/qemu-conf.mo config-temp/qemu-conf.o
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5916 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5937 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lvxhs -lssl
+config-temp/qemu-conf.c:2:27: fatal error: qnio/qnio_api.h: No such file or directory
+ #include <qnio/qnio_api.h>
+                           ^
+compilation terminated.
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5957 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5972 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+gcc -Werror -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+
+funcs: do_compiler do_cc compile_prog main
+lines: 93 129 5986 0
+gcc -pthread -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99 -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -Wno-missing-braces -I/usr/include/libpng15 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
+config-temp/qemu-conf.c:1:24: fatal error: sys/random.h: No such file or directory
+ #include <sys/random.h>
+                        ^
+compilation terminated.
